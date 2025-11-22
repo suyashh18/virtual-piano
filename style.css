@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-family: Arial;
+}
+
+.header h1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 10px;
+  background: #222;
+}
+
+.container div {
+  width: 65px;
+  height: 200px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+  font-weight: bold;
+  transition: 0.1s ease;
+}
+
+/* key press animation */
+.active-key {
+  transform: scale(0.95);
+  background: rgb(255, 209, 123);
+}
